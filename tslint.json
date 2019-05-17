@@ -1,0 +1,10 @@
+{
+  "extends": "ts-config",
+  "linterOptions": {
+    "exclude": ["**/dist/**", "**/node_modules/**"]
+  },
+  "rules": {
+    "no-implicit-dependencies": [true, "dev"],
+    "quotemark": [true, "single", "avoid-escape", "avoid-template"]
+  }
+}

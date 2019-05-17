@@ -1,0 +1,13 @@
+{
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    "baseUrl": "./",
+    "paths": {}
+  },
+  "tstl": {
+    "luaTarget": "5.2",
+    "noHeader": true,
+    "luaLibImport": "inline",
+    "sourceMapTraceback": true
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "name": "@types/factorio-data",
+  "version": "0.0.0",
+  "private": true,
+  "license": "MIT",
+  "typings": "src/index.d.ts"
+}

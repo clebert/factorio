@@ -1,0 +1,16 @@
+{
+  "name": "water-area",
+  "version": "0.0.1",
+  "private": true,
+  "license": "MIT",
+  "scripts": {
+    "prebuild": "rm -rf dist",
+    "build": "tstl -p tsconfig.build.json",
+    "predeploy": "yarn build",
+    "deploy": "../../scripts/deploy.sh water-area 0.0.1"
+  },
+  "devDependencies": {
+    "@types/factorio-data": "^0.0.0",
+    "typescript-to-lua": "^0.21.0"
+  }
+}
