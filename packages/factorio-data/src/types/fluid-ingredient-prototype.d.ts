@@ -1,4 +1,4 @@
-declare namespace Factorio {
+declare namespace FactorioData {
   /**
    * https://wiki.factorio.com/Types/FluidIngredientPrototype
    */

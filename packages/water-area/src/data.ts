@@ -4,7 +4,7 @@ const testMode = false;
 
 interface WaterAreaDescriptor {
   readonly name: string;
-  readonly tint: Factorio.Color;
+  readonly tint: FactorioData.Color;
   readonly order: string;
   readonly waterAmount: number;
 }
@@ -14,7 +14,7 @@ function createColor(
   g: number,
   b: number,
   a: number = 100
-): Factorio.Color {
+): FactorioData.Color {
   return {r: r / 100, g: g / 100, b: b / 100, a: a / 100};
 }
 
@@ -44,7 +44,7 @@ const waterAreaDescriptors: WaterAreaDescriptor[] = [
   }
 ];
 
-const waterAreaTechnology: Factorio.Technology = {
+const waterAreaTechnology: FactorioData.Technology = {
   type: 'technology',
   name: 'water-area',
   icons: [
@@ -76,7 +76,7 @@ data.extend([waterAreaTechnology]);
 for (const waterAreaDescriptor of waterAreaDescriptors) {
   const {name, tint, order, waterAmount} = waterAreaDescriptor;
 
-  const waterAreaRecipe: Factorio.Recipe = {
+  const waterAreaRecipe: FactorioData.Recipe = {
     type: 'recipe',
     name,
     category: testMode ? 'crafting' : 'crafting-with-fluid',
@@ -88,7 +88,7 @@ for (const waterAreaDescriptor of waterAreaDescriptors) {
     enabled: testMode
   };
 
-  const waterAreaItem: Factorio.Item = {
+  const waterAreaItem: FactorioData.Item = {
     type: 'item',
     name,
     order: `c-${order}`,

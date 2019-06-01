@@ -5,8 +5,14 @@ set -e
 # https://wiki.factorio.com/Modding#Basic_structure_of_a_mod
 
 cp info.json dist
-cp -r locale dist
-cp thumbnail.png dist
+
+if [ -e locale ];
+  then cp -r locale dist;
+fi
+
+if [ -e thumbnail.png ];
+  then cp thumbnail.png dist
+fi
 
 rm -rf mods
 mkdirp mods

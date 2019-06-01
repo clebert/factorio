@@ -1,4 +1,5 @@
 {
   "editor.formatOnSave": true,
+  "shellcheck.run": "onSave",
   "typescript.tsdk": "./node_modules/typescript/lib"
 }

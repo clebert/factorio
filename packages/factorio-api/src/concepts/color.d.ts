@@ -1,6 +1,6 @@
-declare namespace FactorioData {
+declare namespace FactorioApi {
   /**
-   * https://wiki.factorio.com/Types/Color
+   * https://lua-api.factorio.com/latest/Concepts.html#Color
    */
   interface Color {
     readonly r?: number;

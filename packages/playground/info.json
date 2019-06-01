@@ -1,0 +1,9 @@
+{
+  "name": "playground",
+  "version": "0.0.1",
+  "title": "Playground",
+  "description": "A mod to experiment and play around with.",
+  "author": "clebert",
+  "factorio_version": "0.17",
+  "dependencies": ["base >= 0.17"]
+}

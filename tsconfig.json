@@ -17,5 +17,11 @@
     "plugins": [{"name": "typescript-tslint-plugin"}],
     "baseUrl": "./packages",
     "paths": {"@factorio/*": ["./*/src"]}
+  },
+  "tstl": {
+    "luaTarget": "5.2",
+    "noHeader": true,
+    "luaLibImport": "inline",
+    "sourceMapTraceback": true
   }
 }

@@ -1,4 +1,4 @@
-declare namespace Factorio {
+declare namespace FactorioData {
   type Layer =
     | 'ground-tile'
     | 'water-tile'

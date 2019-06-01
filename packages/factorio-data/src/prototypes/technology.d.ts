@@ -1,4 +1,4 @@
-declare namespace Factorio {
+declare namespace FactorioData {
   interface Unit {
     readonly count?: number;
     readonly count_formula?: string;

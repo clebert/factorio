@@ -3,6 +3,7 @@
     "EditorConfig.EditorConfig",
     "esbenp.prettier-vscode",
     "ms-vscode.vscode-typescript-tslint-plugin",
+    "timonwong.shellcheck",
     "unional.vscode-sort-package-json",
     "wallabyjs.wallaby-vscode"
   ]

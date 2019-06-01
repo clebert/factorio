@@ -18,6 +18,7 @@
     "ts-config": "^20.9.0",
     "tslint": "^5.17.0",
     "typescript": "^3.5.1",
+    "typescript-to-lua": "^0.21.0",
     "typescript-tslint-plugin": "^0.4.0"
   }
 }

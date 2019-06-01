@@ -1,4 +1,4 @@
-declare namespace Factorio {
+declare namespace FactorioData {
   interface RecipeData {
     readonly ingredients: IngredientPrototype[];
     readonly results: [ProductPrototype, ...ProductPrototype[]];

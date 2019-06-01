@@ -1,4 +1,4 @@
-declare namespace Factorio {
+declare namespace FactorioData {
   /**
    * https://lua-api.factorio.com/latest/Concepts.html#Modifier
    */

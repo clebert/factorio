@@ -1,5 +1,5 @@
 {
-  "name": "water-area",
+  "name": "playground",
   "version": "0.0.1",
   "private": true,
   "license": "MIT",
@@ -7,10 +7,11 @@
     "prebuild": "rm -rf dist",
     "build": "tstl -p tsconfig.build.json",
     "predeploy": "yarn build",
-    "deploy": "../../scripts/deploy.sh water-area 0.0.1",
-    "undeploy": "../../scripts/undeploy.sh water-area"
+    "deploy": "../../scripts/deploy.sh playground 0.0.1",
+    "undeploy": "../../scripts/undeploy.sh playground"
   },
   "devDependencies": {
+    "@types/factorio-api": "^0.0.0",
     "@types/factorio-data": "^0.0.0"
   }
 }

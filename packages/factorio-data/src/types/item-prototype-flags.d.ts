@@ -1,4 +1,4 @@
-declare namespace Factorio {
+declare namespace FactorioData {
   type ItemPrototypeFlag =
     | 'hidden'
     | 'hide-from-bonus-gui'
