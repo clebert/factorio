@@ -9,7 +9,8 @@
     "build": "FORCE_COLOR=1 lerna run build --stream",
     "deploy": "FORCE_COLOR=1 lerna run deploy --stream",
     "format": "prettier --write '**/*.{html,js,json,md,ts,tsx,yml}'",
-    "lint": "FORCE_COLOR=1 lerna exec --stream -- tslint --project tsconfig.json --format stylish"
+    "lint": "FORCE_COLOR=1 lerna exec --stream -- tslint --project tsconfig.json --format stylish",
+    "undeploy": "FORCE_COLOR=1 lerna run undeploy --stream"
   },
   "devDependencies": {
     "lerna": "^3.14.1",

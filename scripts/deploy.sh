@@ -19,7 +19,7 @@ zip -r -X "mods/$MOD_NAME.zip" dist
 
 MODS_DIRNAME=~/Library/Application\ Support/factorio/mods
 
-rm -f "$MODS_DIRNAME/$1_*.zip"
+rm -f "$MODS_DIRNAME/$1"_*.zip
 
 cp "mods/$MOD_NAME.zip" "$MODS_DIRNAME"
 
