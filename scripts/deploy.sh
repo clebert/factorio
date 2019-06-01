@@ -4,16 +4,25 @@ set -e
 
 # https://wiki.factorio.com/Modding#Basic_structure_of_a_mod
 
-cp ../$1/info.json ../$1/dist
-cp -r ../$1/locale ../$1/dist
-cp ../$1/thumbnail.png ../$1/dist
+cp info.json dist
+cp -r locale dist
+cp thumbnail.png dist
+
+rm -rf mods
+mkdirp mods
+
+MOD_NAME=$1_$2
+
+zip -r -X "mods/$MOD_NAME.zip" dist
 
 # https://wiki.factorio.com/Application_directory
 
-rm -f ~/Library/Application\ Support/factorio/mods/$1_*.zip
+MODS_DIRNAME=~/Library/Application\ Support/factorio/mods
 
-zip -r -X ~/Library/Application\ Support/factorio/mods/$1_$2.zip dist
+rm -f "$MODS_DIRNAME/$1_*.zip"
 
-echo ~/Library/Application\ Support/factorio/mods
+cp "mods/$MOD_NAME.zip" "$MODS_DIRNAME"
 
-ls ~/Library/Application\ Support/factorio/mods
+echo "$MODS_DIRNAME"
+
+ls "$MODS_DIRNAME"
